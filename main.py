@@ -35,7 +35,7 @@ def handle_message(event):
         ]
     )
 
-    reply_text = response.choices[0].message.content"
+    reply_text = response.choices[0].message.content
     line_bot_api.reply_message(event.reply_token, TextSendMessage(text=reply_text))
 import os
 
