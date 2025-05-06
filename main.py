@@ -35,7 +35,7 @@ def handle_message(event):
         ]
     )
 
-    reply_text = response.choices[0].message.content
+    reply_text = response["choices"][0]["message"]["content"]
 
     print("User input:", user_text)
     print("Bot reply:", reply_text)
